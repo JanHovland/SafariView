@@ -18,9 +18,10 @@ struct ContentView: View {
     var body: some View {
         Button(action: {
             // update the URL if you'd like to
-            self.urlString = "https://duckduckgo.com"
+            self.urlString = "https://swiftwithmajid.com/2020/04/01/drag-and-drop-in-swiftui/?utm_campaign=%20SwiftUI%20Weekly&utm_medium=email&utm_source=Revue%20newsletter"
+            // "https://duckduckgo.com"
             // tell the app that we want to show the Safari VC
-            self.showSafari = true
+            self.showSafari.toggle()
         }) {
             Text("Present Safari")
         }
